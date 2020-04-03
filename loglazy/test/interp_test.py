@@ -1,5 +1,7 @@
 from ..interp import Interp
 
+# flake8: noqa
+
 
 def test_on_simple_functions():
     interp = Interp(lambda: 2)
@@ -18,8 +20,7 @@ def test_on_simple_functions():
 
 
 def test_on_complex_objects():
-    values = [
-        (4, 2), [3, 2, 4, 1], {4}, {
+    values = [(4, 2), [3, 2, 4, 1], {4}, {
         2: 2,
         3: ""
     }, "", Interp, object, Exception,
